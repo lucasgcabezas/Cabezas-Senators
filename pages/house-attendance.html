@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" id="house">
+
+<head>
+
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles/style.css">
+<title>TGIF - House Attendance</title>
+
+<body id="attendance">
+    <header class="container-fluid">
+        <div class="container">
+
+            <div class="row my-3">
+                <div class="col-2">
+                    <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment"><img
+                            class="img-responsiv" src="../assets/logo.jpg" alt="logo-tgif" style="max-width:20vw;"></a>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <a class="td-none" href="mailto:info@tgif.net"><img src="../assets/mail.png" alt="mail"
+                            style="max-width:1.4vw;">info@tgif.net</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark py-2 px-5">
+            <div class="container px-5">
+
+                <div class="collapse navbar-collapse px-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-4">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Congress 113</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./house.html">House</a></li>
+                                <li><a class="dropdown-item " href="./senate.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Attendance</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">House</a></li>
+                                <li><a class="dropdown-item " href="./senate-attendance.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Party Loyalty</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./house-party-loyalty.html">House</a></li>
+                                <li><a class="dropdown-item " href="./senate-party-loyalty.html">Senate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container ">
+        <div class="row my-4 d-flex justify-content-between">
+            <div class="col-6">
+                <h2 class="mb-2">Attendance</h2>
+                <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each
+                    house.
+                    Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus,
+                    in
+                    most
+                    cases, debates continue even if a majority is not present.</p>
+
+                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator
+                    stating
+                    "aye"
+                    or "no" when his or her name is announced. The House reserves roll-call votes for the most formal
+                    matters,
+                    as a roll-call of all 435 representatives takes quite some time; normally, members vote by
+                    electronic
+                    device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may
+                    (if
+                    present) cast the tiebreaking vote.</p>
+            </div>
+            <div class="col-4 ">
+                <h2 class="mb-2 text-end h4" >Senate at a glance</h2>
+                <table class="table table-striped table-hover tablaAlign">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Reps</th>
+                            <th>% Voted with Prty</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col">
+                <h2 class="h4">Least Engaged (Bottom 10% Attendance)</h2>
+                <table class="table table-striped table-hover mt-2">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla1">
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="col">
+                <h2 class="h4">Most Engaged (Top 10% Attendance)</h2>
+                <table class="table table-striped table-hover mt-2">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla2">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white mt-4">
+        <div class="row-3 d-flex flex-row justify-content-center ">
+            <div class="col d-flex justify-content-center ">
+                <span><small>&copy; 2016 TGIF | All Rights Reserved</small></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

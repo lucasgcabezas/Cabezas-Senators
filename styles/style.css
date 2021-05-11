@@ -1,0 +1,41 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+}
+
+main {
+    flex: 1;
+    background-color: white;
+}
+
+.tabla td,
+.tabla th{
+    min-width: 15vw;
+}
+
+.tabla2 td,
+.tabla2 th{
+    min-width: 15vw;
+
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: inline;
+}
+
+.tablaAlign td,
+.tablaAlign th  {
+    text-align: center;
+}
